@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Modelo de Banco de Dados</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .card {
+            background-color: #f8f8f8;
+            border-radius: 8px;
+            padding: 10px;
+            margin: 10px 0;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .card h3 {
+            margin-top: 0;
+        }
+
+        .card p {
+            margin: 5px 0;
+        }
+
+        .author,
+        .post,
+        .comment {
+            padding: 10px;
+            border: 1px solid #ddd;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+
+        .author {
+            background-color: #60e2ff;
+        }
+
+        .post {
+            background-color: #cbff69;
+        }
+
+        .comment {
+            background-color: #ffdc73;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Modelo de Banco de Dados para Blog</h1>
+    </header>
+
+    <div class="container">
+        <!-- Entidade: Autor -->
+        <div class="card">
+            <h3>Autor</h3>
+            <div class="author">
+                <p><strong>ID Autor:</strong> 1</p>
+                <p><strong>Nome:</strong> Alex Souza</p>
+                <p><strong>Email:</strong> alex.souza@email.com</p>
+            </div>
+        </div>
+
+        <!-- Entidade: Postagem -->
+        <div class="card">
+            <h3>Postagem</h3>
+            <div class="post">
+                <p><strong>ID Postagem:</strong> 101</p>
+                <p><strong>Título:</strong> Introdução ao JavaScript</p>
+                <p><strong>Conteúdo:</strong> Neste artigo, vamos explorar os conceitos básicos de JavaScript...</p>
+                <p><strong>Data de Publicação:</strong> 2025-09-25 10:00:00</p>
+                <p><strong>Autor:</strong> Alex Souza</p>
+            </div>
+        </div>
+
+        <!-- Entidade: Comentário -->
+        <div class="card">
+            <h3>Comentário</h3>
+            <div class="comment">
+                <p><strong>ID Comentário:</strong> 2001</p>
+                <p><strong>Texto:</strong> Excelente artigo, gostei muito das explicações!</p>
+                <p><strong>Data do Comentário:</strong> 2025-09-25 11:30:00</p>
+                <p><strong>Autor:</strong> Alex Souza</p>
+                <p><strong>Postagem Relacionada:</strong> Introdução ao JavaScript</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

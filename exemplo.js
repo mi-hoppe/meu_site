@@ -48,3 +48,21 @@
 //dog.fazerSom();
 
 
+
+
+
+
+
+
+
+function filtrarPrimos (array, calback) {
+    array.forEach (i => {
+      if (calback(i)) {
+        console.log(i)
+      }
+    })
+  }
+
+  function isPrimo (num) {
+    if (num < 2) return false
+    
